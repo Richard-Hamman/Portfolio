@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" class="scrollbar">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Richards-Porfolio-Icon.png" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Hamman | Portfolio</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Meta Description -->
+    <meta name="description" content="Portfolio of Richard Hamman — Web Developer specializing in GSAP animations, accessibility, and modern UX.">
+
+    <!-- Author -->
+    <meta name="author" content="Richard Hamman">
+
+    <!-- Open Graph (for social sharing previews) -->
+    <meta property="og:title" content="Richard Hamman | Portfolio">
+    <meta property="og:description" content="Creative web developer with a passion for animations and user-first design.">
+    <meta property="og:image" content="/images/portfolio-preview.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Richard Hamman",
+      "url": "https://your-domain.com",
+      "image": "https://your-domain.com/images/profile.jpg",
+      "sameAs": [
+        "https://github.com/richardhamman",
+        "https://www.linkedin.com/in/richardhamman"
+      ],
+      "jobTitle": "Frontend Web Developer",
+      "worksFor": {
+        "@type": "Rich/Werx",
+        "name": "Freelance"
+      },
+      "knowsAbout": ["GSAP", "Lenis", "ScrollTrigger", "Accessibility", "HTML", "CSS", "JavaScript"],
+      "description": "Portfolio website showcasing Richard Hamman's web development projects, animations, and user-first design."
+    }
+  </script>
+  </head>
+  <body>
+    <nav aria-label="navigation" class="fixed w-full top-0 right-0 left-0 z-20 opacity-0 flex justify-between items-center px-[2rem] py-[.25rem] bg-[var(--secondary)]">
+      <div class="logo relative" aria-label="Richard's Logo">
+        <p class="relative flex justify-center items-center w-[110px] h-[110px] bg-[var(--black)] text-[var(--primary)] font-bold rounded-full z-40">RH</p>
+      </div>
+      <div class="nav-contact flex flex-col p-[.5rem] rounded-[var(--borderRadius)] bg-[var(--primary)] shadow-[var(--boxShadow)]" aria-label="Richard's Contact Options">
+        <a href="tel:0781148666" aria-label="Richard's Contact Number" title="Contact Richard Here" target="blank" class="leading-none text-[var(--white)] text-shadow-[var(--textShadow)]">078 114 8666</a>
+        <a href="mailto:richardhamman848484@gmail.com" aria-label="Richard's Email address" title="Email Richard Here" target="blank" class="leading-none text-[var(--white)] text-shadow-[var(--textShadow)]">richardhamman848484<br>@gmail.com</a>
+      </div>
+      <div class="navbar flex justify-center items-center" aria-label="Website Page Section Options">
+        <a href="" class="btn" aria-label="Go To Home Page" title="Go To Home Page">home</a>
+        <a href="#tech" class="btn" aria-label="Go To Technical Skills Section" title="Go To Technical Skills Section">tech skills</a>
+        <a href="#work" class="btn" aria-label="Go To Work Experience Section" title="Go To Work Experience Section">work exp</a>
+        <a href="#about" class="btn" aria-label="Go To About Me Section" title="Go To About Me Section">about me</a>
+        <a href="#contact" class="btn" aria-label="Go To Contact Me Section" title="Go To Contact Me Section">contact</a>
+      </div>
+    </nav>
+    <!-- hero -->
+    <section class="hero relative flex justify-center overflow-hidden z-[1] pt-[7.5rem] min-h-screen min-h-dvh">
+      <div class="hero-content-box grid grid-cols-[repeat(auto-fit,minmax(30rem,1fr))] gap-y-[1rem] place-items-center opacity-0">
+        <div class="content flex flex-col justify-center items-center text-center p-[1rem]">
+          <p class="text-[var(--white)] text-[var(--text-size)] font-[var(--rajdhani)]">Welcome to</p>
+          <h1 class="text-[var(--white)] text-[var(--heading-size)] font-[var(--orbitron)]">Richard Hamman's Porfolio</h1>
+          <p>Front-End Developer <span class="text-[var(--primary)] text-[2.5rem]">|</span> Website Developer <span class="text-[var(--primary)] text-[2.5rem]">|</span> Website Manager</p>
+        </div>
+        <div class="image-box flex justify-center items-center h-[350px] w-[350px] rounded-full overflow-hidden">
+          <img src="./images/Richard.jpeg" alt="hero img">
+        </div>
+        <div class="btns flex gap-2">
+          <a href="#tech" class="btn">Get Started</a>
+          <a href="#contact" class="btn">Contact Me</a>
+          <!-- <a href="" class="btn">Nother btn</a> -->
+        </div>
+      </div>
+      
+      <div class="overlay inset-0 z-[2] flex flex-wrap">
+        <div class="overlay-corner top-left">
+        <p>“Crafting seamless web experiences”</p></div>
+        <div class="overlay-corner top-right">
+        <p>“Expert GSAP & ScrollTrigger animations”</p></div>
+        
+        <div class="overlay-corner bottom-left">
+        <p>“Accessibility-first design approach"</p></div>
+        <div class="overlay-corner bottom-right">
+        <p>“Innovative, responsive layouts”</p></div>
+      </div>
+    </section>
+    <!-- technical skills section -->
+    <section class="technical-skills relative px-[2.5%] py-[5rem] z-10" aria-labelledby="skills-title" id="tech">
+      <div class="title">
+        <h2>Technical <span>Skills</span></h2>
+      </div>
+      
+      <div class="skills-box-container grid grid-cols-[repeat(auto-fit,minmax(30rem,1fr))] gap-[1rem] bg-[var(--black)]"> 
+        <div class="box skills-box bg-[var(--grey)] p-[1rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[2rem]">Core Web Technologies</h3>
+          <ul>
+            <li class="flex justify-between pr-[2rem]">Html<span  class="text-[var(--primary)]"><i class="fa-brands fa-html5"></i></span></li>
+            <li class="flex justify-between pr-[2rem]">Css3<span  class="text-[var(--primary)]"><i class="fa-brands fa-css3"></i></span></li>
+            <li class="flex justify-between pr-[2rem]">JavaScript<span  class="text-[var(--primary)]"><i class="fa-brands fa-js"></i></span></li>
+            <li class="flex justify-between pr-[2rem]">WordPress<span  class="text-[var(--primary)]"><i class="fa-brands fa-wordpress"></i></span></li>
+            <li class="flex justify-between pr-[2rem]">Tailwind Css<span  class="text-[var(--primary)]"><i class="fa-brands fa-css3"></i></span></li>
+            <li class="flex justify-between pr-[2rem]">Sass<span  class="text-[var(--primary)]"><i class="fa-brands fa-sass"></i></span></li>
+          </ul>
+        </div>
+        <div class="box skills-box bg-[var(--grey)] p-[1rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[2rem]">Performance & Debugging</h3>
+          <ul class="space-y-[0.5rem]">
+            <li>Lighthouse</li>
+            <li>Chrome DevTools</li>
+            <li>Minification & Compression</li>
+            <li>Image Optimisation</li>
+            <li>Browser Testing</li>
+          </ul>
+        </div>
+        
+        <div class="box skills-box bg-[var(--grey)] p-[1rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[2rem]">Professional<br> Skills</h3>
+          <ul>
+            <li>Responsive Design</li>
+            <li>SEO Basics</li>
+            <li>Code Refactoring</li>
+            <li>Communication</li>
+            <li>Problem Solving</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+      <div class="skills-box-container grid grid-cols-[repeat(auto-fit,minmax(30rem,1fr))] gap-[1rem] bg-[var(--black)] pt-[1rem]"> 
+        <div class="box skills-box bg-[var(--grey)] p-[1rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[2rem]">Frameworks & CMS</h3>
+          <ul>
+            <li>Bootstrap</li>
+            <li>Front-End Libraries</li>
+            <li>WordPress Themes</li>
+            <li>Content Management Systems</li>
+          </ul>
+        </div>
+        <div class="box skills-box bg-[var(--grey)] p-[1rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[2rem]">Development Tools</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Vite</li>
+            <li>FileZilla</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bg-wrap bg-wrap-1" aria-hidden="true"></div>
+      <div class="bg-wrap bg-wrap-2" aria-hidden="true"></div>
+    </section>
+    <!-- work experience section -->
+    <section class="work-experience relative px-[2.5%] py-[5rem]" aria-labelledby="work-title" id="work">
+      <div class="title" id="work-title">
+        <h2><span>Work </span>Experience</h2>
+      </div>
+      <div class="work-experience-box-container grid grid-cols-[repeat(auto-fit,minmax(40rem,1fr))] gap-[.5rem] pb-[.5rem]">
+        <div class="box flex flex-col bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[1rem]">Freelance Front-End Developer & Website Manager</h3>
+        </div>
+        <div class="box flex flex-col bg-[var(--grey)] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)] ">
+          <div class="image-box h-[300px]">
+            <img src="/images/work-experience-1.jpg" alt="Work Experience">
+          </div>
+        </div>
+      </div>  
+      <div class="work-experience-box-container grid grid-cols-[repeat(auto-fit,minmax(40rem,1fr))] gap-[.5rem] pb-[.5rem]">
+        <div class="box bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <p> Johannesburg, Remote | Mar 2019 – Present</p>
+          <p>Clients include:</p>
+        </div>
+        <div class="box p-0 bg-[var(--grey)] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <ul class="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-[.25rem] p-0 overflow-hidden">
+            <li><a href="https://cvcivets.co.za/" title="CV Civets" target="blank" aria-lable="Go To CV Civets"><img src="/images/cvcivets.gif" alt="CV Civets Website"></img></a></li>
+            <li><a href="https://poolpro.co.za/" title="Poolpro" target="blank" aria-lable="Go To Pool Pro"><img src="/images/poolpro.png" alt="Poolpro Website"></img></a></li>
+            <li><a href="#" title="Sparkling Giant Pools" target="blank" aria-lable="Go To Sparkling Giant Pools"><img src="/images/sparklinggiant.png" alt="Sparkling Giant"></img></a></li>
+
+            <li><a href="#" title="Shake Shoppe" target="blank" aria-lable="Go To The Shake Shoppe"><img src="/images/shakeshoppe.png" alt="Shake Shoppe"></img></a></li>
+          </ul>
+        </div>
+      </div>
+      <div  class="work-experience-box-container flex flex-col gap-[.5rem] pb-[.5rem]">
+        <div class="box bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3>Responsibilities</h3>
+          <ol class="p-[2rem]">
+            <li>Developed responsive, standards-compliant websites using HTML, CSS, and JavaScript</li>
+            <li>Translated design mockups into functional pages, often working within CI guidelines</li>
+            <li>Managed client websites and updates, ensuring fast load times and smooth performance</li>
+            <li>Conducted cross-browser testing and debugging using Chrome DevTools</li>
+            <li>Optimised websites with image compression, caching strategies, and modern front-end best practices</li>
+            <li>Used Git for version control and coordinated changes across distributed teams</li>
+            <li>Recovered hacked WordPress sites and restored functionality</li>
+            <li>Handled client communications, timelines, and contracts as part of a freelance workflow</li>
+            <li>Actively engaged in business development through relationship building and repeat work</li>
+          </ol>
+        </div>
+      </div>
+      <div class="work-experience-box-container grid grid-cols-[repeat(auto-fit,minmax(40rem,1fr))] gap-[.5rem] pb-[.5rem]">
+        <div class="box bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)] flex flex-col text-left">
+          <h3 class="text-center pb-[1rem]">Intern Front-End<br> Website Developer</h3>
+          <p>Web Changes – Fairlands,<br> Johannesburg | Sep 2018 – Feb 2019</p>
+          <p>Assisted with front-end code development across multiple client websites
+          Learned foundational coding practices, performance tuning, and debugging
+          Supported senior developers with layout implementation, styling, and responsiveness</p>
+          <p>Gained experience in version control (Git), project task tracking, and website testing</p>
+          <p>Developed entry-level problem-solving skills related to front-end challenges and browser issues</p>
+        </div>
+        <div class="box bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[1rem]">Previous Roles<br> (Additional Info on Request)</h3>
+          <ul class="space-y-[.5rem]">
+            <li>Warehouse Receiving Manager,<br> Sphynx Trading, Randfontein (2015 – 2018)</li>
+            <li>Floor & Bar Manager, Rhapsody’s Bryanston (2014 – 2015)</li>
+            <li>Floor Manager, Del Forno’s Pizzeria, Florida North (2012 – 2014)</li>
+            <li>Front of House, News Café Town Square, Constantia Kloof (2011 – 2012)</li>
+         </ul>
+        </div>
+      </div>
+      <div class="work-experience-box-container grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-[.5rem]">
+        <div class="box bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+          <h3 class="text-center pb-[1rem]">Education & Training</h3>
+          </div>
+          <div class="box bg-[var(--grey)] p-[.5rem] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
+            <ul class="space-y-[.5rem]">
+              <li>The Complete Web Developer Course – Udemy (Ongoing)</li>
+              <li>The Complete 2025 Web Developer Bootcamp – Udemy (Ongoing)</li>
+              <li>HTML – Level 1, Cambridge Certification Authority – 2020</li>
+              <li>Silver Service Management Course, News Café Townsquare – 2012s</li>
+            </ul>
+            <p>References available on request</p>
+          </div>
+      </div>
+      <div class="bg-wrap bg-wrap-1"></div>
+      <div class="bg-wrap bg-wrap-2"></div>
+    </section>
+
+    <section class="about relative px-[5%] py-[5rem] bg-[url('/images/about.jpg')] bg-center bg-cover bg-fixed" id="about">
+
+      <div class="title relative z-[2]" id="about-title">
+        <h3><span>About </span>me</h3>
+      </div>
+      <div class="content relative z-[2] text-[var(--white)] font-[var(--rajdhani)] max-w-[1000px] mx-auto">
+        <h4>Profile</h4>
+        <p>Im a technically focused Front-End Developer with a solid track record in building clean, responsive, and user-friendly websites. My background includes both freelance and internship experience, where I’ve delivered functional front-end solutions using HTML, CSS, JavaScript, and WordPress. With years of practical exposure to computers and web technologies, I bring strong attention to detail, problem-solving ability, and a clear understanding of performance, accessibility, and cross-browser compatibility. I work confidently with development tools such as Git, Chrome DevTools, and Lighthouse, and continuously expand my skills to stay current with evolving front-end practices.</p>
+      </div>
+    </section>
+    <!-- contact section begins -->
+    <section class="contact px-[5%] py-[5rem] bg-[var(--black)] text-[var(--white)] font-[var(--rajdhani)]" aria-labelledby="contact-title" id="contact">
+  <div class="title" id="contact-title">
+    <h3>
+      <span>Contact</span> Me
+    </h3>
+  </div>
+
+  <form class="max-w-[800px] mx-auto grid grid-cols-1 gap-[1rem]">
+    <label for="name" class="text-left">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name"
+      class="p-[1rem] bg-[var(--grey)] text-[var(--white)] border border-[var(--primary)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)]" required>
+
+    <label for="email" class="text-left">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Your email address"
+      class="p-[1rem] bg-[var(--grey)] text-[var(--white)] border border-[var(--primary)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)]" required>
+
+    <label for="reason" class="text-left">How can I help you?</label>
+    <select id="reason" name="reason"
+      class="p-[1rem] bg-[var(--grey)] text-[var(--white)] border border-[var(--primary)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)]">
+      <option value="">Select an option</option>
+      <option value="website-build">Website Build / Redesign</option>
+      <option value="seo">SEO Optimization</option>
+      <option value="maintenance">Ongoing Maintenance</option>
+      <option value="consultation">Freelance Consultation</option>
+    </select>
+
+    <label for="message" class="text-left">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your message..."
+      class="p-[1rem] bg-[var(--grey)] text-[var(--white)] border border-[var(--primary)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)] resize-none" required></textarea>
+
+    <a type="submit"
+      class="btn w-max">Send Message</a>
+  </form>
+</section>
+
+    <footer class="relative bg-[url('/images/footer.jpg')] bg-center bg-cover mt-[5rem] px-[7%]">
+      <div class="footer-logo flex justify-center items-center py-[5rem]">
+          <p class="relative flex justify-center items-center h-[110px] w-[110px] text-[4rem] bg-[var(--black)] text-[var(--primary)] font-bold rounded-full z-[4]">RH</p>
+        </div>
+      <div class="footer-box-container grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-[1rem] bg-[rgba(255,255,255,0.5)] border border-[var(--white)] rounded-tl-[var(--borderRadius)] rounded-tr-[var(--borderRadius)] shadow-[var(--boxShadow)]">
+        <div class="footer-box flex flex-col text-left p-[1rem]">
+          <h3 class="text-[var(--black)]">Quick Links</h3>
+          <a href="index.html" class="text-[var(--black)]" aria-label="Go To Home Page" title="Go To Home Page">home</a>
+          <a href="#tech" class="text-[var(--black)]" aria-label="Go To Technical Skills Section" title="Go To Technical Skills Section">tech skills</a>
+          <a href="#work" class="text-[var(--black)]" aria-label="Go To Work Experience Section" title="Go To Work Experience Section">work exp</a>
+          <a href="#about" class="text-[var(--black)]" aria-label="Go To About Me Section" title="Go To About Me Section">about me</a>
+          <a href="#contact" class="text-[var(--black)]" aria-label="Go To Contact Me Section" title="Go To Contact Me Section">contact</a>
+        </div>
+        <div class="footer-box flex flex-col text-left p-[1rem]">
+          <h3 class="text-[var(--black)]">Contact Info</h3>
+          <a href="" class="text-[var(--black)]">richardhamman848484<br>@gmail.co.za</a>
+          <a href="tel:0781148666" class="text-[var(--black)]">+27 78 114 8666</a>
+        </div>
+        <div class="footer-box flex flex-col text-left p-[1rem]">
+          <h3 class="text-[var(--black)]">Location</h3>
+          <!-- <h3>Extra SHit</h3> -->
+          <a href="" class="text-[var(--black)]">South Africa</a>
+          <a href="" class="text-[var(--black)]">Johannesburg</a>
+          <a href="" class="text-[var(--black)]">Randfontein</a>
+          <a href="" class="text-[var(--black)]">Greenhills</a>
+        </div>
+        <div class="footer-box flex flex-col text-left p-[1rem]">
+          <h3 class="text-[var(--black)]">Socials</h3>
+          <div class="social-media-icons flex gap-[.5rem]">
+            <a href="" class="flex justify-center items-center bg-[#0072b1] text-[var(--white)] w-[100px] h-[100px] p-[2rem] border border-[var(--black)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)] transition duration-[500ms] ease-in-out hover:translate-x-[5px]"><i class="fa-brands fa-linkedin text-[5rem] text-shadow-[var(--textShadow)]"></i></a>
+            <a href="" class="flex justify-center items-center bg-[#25d366] text-[var(--white)] w-[100px] h-[100px] p-[2rem] border border-[var(--black)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)] transition duration-[500ms] ease-in-out hover:translate-x-[5px]"><i class="fa-brands fa-whatsapp text-[5rem] text-shadow-[var(--textShadow)]"></i></a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="credit bg-[rgba(255,255,255,0.5)] text-center py-[1rem] shadow-[var(--boxShadow)]">
+        <a href="index.html" class="text-[var(--black)] font-bold">Richard Hamman 2025</a>
+        <p class="text-[var(--black)]">“Built with Tailwind, GSAP & ❤️”</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
