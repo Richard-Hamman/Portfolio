@@ -21,22 +21,22 @@ lenis.stop();
 gsap.timeline()
 
   // Overlay enters one-by-one with dramatic pauses
-  // .to(".top-left", { left: "-.75vw", duration: 1, ease: "power2.inOut" })
-  // .to(".top-right", { right: "-.75vw", duration: 1, ease: "power2.inOut" }, "+=3")
+  .to(".top-left", { left: "-.75vw", duration: 0.1, ease: "power2.inOut" })
+  .to(".top-right", { right: "-.75vw", duration: 0.1, ease: "power2.inOut" }, "+=1")
   
-  // .to(".bottom-left", { left: "-.75vw", duration: 0.9, ease: "power2.inOut" }, "+=3")
-  // .to(".bottom-right", { right: "-.75vw", duration: 0.1, ease: "power2.inOut" }, "+=3")
+  .to(".bottom-left", { left: "-.75vw", duration: 0.1, ease: "power2.inOut" }, "+=1")
+  .to(".bottom-right", { right: "-.75vw", duration: 0.1, ease: "power2.inOut" }, "+=1")
   
 
   // Short suspense pause
-  // .to(".overlay", {}, "+=5")
+  .to(".overlay", {}, "+=1")
 
   // All overlays exit together
-  // .to(".top-left", { left: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
-  // .to(".top-right", { right: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
+  .to(".top-left", { left: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
+  .to(".top-right", { right: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
   
-  // .to(".bottom-left", { left: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
-  // .to(".bottom-right", { right: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
+  .to(".bottom-left", { left: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
+  .to(".bottom-right", { right: "-55vw", duration: 0.6, ease: "power2.inOut" }, "<")
   
     
   // Hero reveal with fade AND scale
@@ -78,13 +78,31 @@ overlayCorner.forEach((slide, i) => {
     scale: 1,
     duration: 1,
     ease: "power2.out",
-    onStart: () => {
-      // Blur all previous slides
-      overlayCorner.forEach((s, j) => {
-        if (j < i) s.classList.add("blur");
-      });
-    }
   }, "+=2.1"); // adjust timing between slides
 });
+
+// back to top progress button
+let calcScrollValue = () => {
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    if (!scrollProgress) return;
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    }else {
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#34df5d ${scrollValue}%, #083e6d ${scrollValue}%)`;
+};
+
+window.addEventListener('scroll', calcScrollValue);
+window.addEventListener('load', calcScrollValue);
+
+document.getElementById("year").textContent = new Date().getFullYear();
 
 

@@ -54,11 +54,16 @@
         <a href="mailto:richardhamman848484@gmail.com" aria-label="Richard's Email address" title="Email Richard Here" target="blank" class="leading-none text-[var(--white)] text-shadow-[var(--textShadow)]">richardhamman848484<br>@gmail.com</a>
       </div>
       <div class="navbar flex justify-center items-center" aria-label="Website Page Section Options">
-        <a href="" class="btn" aria-label="Go To Home Page" title="Go To Home Page">home</a>
-        <a href="#tech" class="btn" aria-label="Go To Technical Skills Section" title="Go To Technical Skills Section">tech skills</a>
-        <a href="#work" class="btn" aria-label="Go To Work Experience Section" title="Go To Work Experience Section">work exp</a>
-        <a href="#about" class="btn" aria-label="Go To About Me Section" title="Go To About Me Section">about me</a>
-        <a href="#contact" class="btn" aria-label="Go To Contact Me Section" title="Go To Contact Me Section">contact</a>
+        <div class="btn"><a href="index.html" aria-label="Go To Home Page" title="Go To Home Page">home</a></div>
+        <div class="btn"><a href="#tech" aria-label="Go To Technical Skills Section" title="Go To Technical Skills Section">tech skills</a></div>
+        <div class="btn"><a href="#work" aria-label="Go To Work Experience Section" title="Go To Work Experience Section">work exp</a></div>
+        <div class="btn"><a href="#about" aria-label="Go To About Me Section" title="Go To About Me Section">about me</a></div>
+        <div class="btn"><a href="#contact" aria-label="Go To Contact Me Section" title="Go To Contact Me Section">contact</a></div>
+        
+        
+        
+        
+        
       </div>
     </nav>
     <!-- hero -->
@@ -66,29 +71,38 @@
       <div class="hero-content-box grid grid-cols-[repeat(auto-fit,minmax(30rem,1fr))] gap-y-[1rem] place-items-center opacity-0">
         <div class="content flex flex-col justify-center items-center text-center p-[1rem]">
           <p class="text-[var(--white)] text-[var(--text-size)] font-[var(--rajdhani)]">Welcome to</p>
-          <h1 class="text-[var(--white)] text-[var(--heading-size)] font-[var(--orbitron)]">Richard Hamman's Porfolio</h1>
+          <h1 class="text-[var(--white)] text-[var(--heading-size)] font-[var(--orbitron)]">Richard Hamman's Portfolio</h1>
           <p>Front-End Developer <span class="text-[var(--primary)] text-[2.5rem]">|</span> Website Developer <span class="text-[var(--primary)] text-[2.5rem]">|</span> Website Manager</p>
         </div>
         <div class="image-box flex justify-center items-center h-[350px] w-[350px] rounded-full overflow-hidden">
-          <img src="./images/Richard.jpeg" alt="hero img">
+          <img src="./images/Richard.jpeg" loading="lazy" alt="hero img">
         </div>
         <div class="btns flex gap-2">
-          <a href="#tech" class="btn">Get Started</a>
-          <a href="#contact" class="btn">Contact Me</a>
+          <div class="btn">
+            <a href="#tech">Get Started</a>
+          </div>
+          <div class="btn">
+            <a href="#contact">Contact Me</a>
+          </div>
+          
           <!-- <a href="" class="btn">Nother btn</a> -->
         </div>
       </div>
       
       <div class="overlay inset-0 z-[2] flex flex-wrap">
         <div class="overlay-corner top-left">
-        <p>“Crafting seamless web experiences”</p></div>
+          <p>“Crafting seamless web experiences”</p>
+        </div>
         <div class="overlay-corner top-right">
-        <p>“Expert GSAP & ScrollTrigger animations”</p></div>
+          <p>“Expert GSAP & ScrollTrigger animations”</p>
+        </div>
         
         <div class="overlay-corner bottom-left">
-        <p>“Accessibility-first design approach"</p></div>
+          <p>“Accessibility-first design approach"</p>
+        </div>
         <div class="overlay-corner bottom-right">
-        <p>“Innovative, responsive layouts”</p></div>
+          <p>“Innovative, responsive layouts”</p>
+        </div>
       </div>
     </section>
     <!-- technical skills section -->
@@ -166,7 +180,7 @@
         </div>
         <div class="box flex flex-col bg-[var(--grey)] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)] ">
           <div class="image-box h-[300px]">
-            <img src="/images/work-experience-1.jpg" alt="Work Experience">
+            <img src="/images/work-experience-1.jpg" alt="Work Experience" loading="lazy">
           </div>
         </div>
       </div>  
@@ -177,11 +191,11 @@
         </div>
         <div class="box p-0 bg-[var(--grey)] shadow-[var(--boxShadow)] shadow-[inset var(--boxShadow)]">
           <ul class="grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-[.25rem] p-0 overflow-hidden">
-            <li><a href="https://cvcivets.co.za/" title="CV Civets" target="blank" aria-lable="Go To CV Civets"><img src="/images/cvcivets.gif" alt="CV Civets Website"></img></a></li>
-            <li><a href="https://poolpro.co.za/" title="Poolpro" target="blank" aria-lable="Go To Pool Pro"><img src="/images/poolpro.png" alt="Poolpro Website"></img></a></li>
-            <li><a href="#" title="Sparkling Giant Pools" target="blank" aria-lable="Go To Sparkling Giant Pools"><img src="/images/sparklinggiant.png" alt="Sparkling Giant"></img></a></li>
+            <li><a href="https://cvcivets.co.za/" title="CV Civets" target="blank" aria-lable="Go To CV Civets"><img src="/images/cvcivets.gif" alt="CV Civets Website" loading="lazy"></img></a></li>
+            <li><a href="https://poolpro.co.za/" title="Poolpro" target="blank" aria-lable="Go To Pool Pro"><img src="/images/poolpro.png" alt="Poolpro Website" loading="lazy"></img></a></li>
+            <li><a href="#" title="Sparkling Giant Pools" target="blank" aria-lable="Go To Sparkling Giant Pools"><img src="/images/sparklinggiant.png" alt="Sparkling Giant" loading="lazy"></img></a></li>
 
-            <li><a href="#" title="Shake Shoppe" target="blank" aria-lable="Go To The Shake Shoppe"><img src="/images/shakeshoppe.png" alt="Shake Shoppe"></img></a></li>
+            <li><a href="#" title="Shake Shoppe" target="blank" aria-lable="Go To The Shake Shoppe"><img src="/images/shakeshoppe.png" alt="Shake Shoppe" loading="lazy"></img></a></li>
           </ul>
         </div>
       </div>
@@ -280,8 +294,10 @@
     <textarea id="message" name="message" rows="5" placeholder="Your message..."
       class="p-[1rem] bg-[var(--grey)] text-[var(--white)] border border-[var(--primary)] rounded-[var(--borderRadius)] shadow-[var(--boxShadow)] resize-none" required></textarea>
 
-    <a type="submit"
-      class="btn w-max">Send Message</a>
+      <div class="btn">
+        <a type="submit" class="w-max">Submit</a>
+      </div>
+    
   </form>
 </section>
 
@@ -321,10 +337,17 @@
         
       </div>
       <div class="credit bg-[rgba(255,255,255,0.5)] text-center py-[1rem] shadow-[var(--boxShadow)]">
-        <a href="index.html" class="text-[var(--black)] font-bold">Richard Hamman 2025</a>
+        <p href="index.html" class="text-[var(--black)] font-bold">Richard Hamman <span id="year"></span> </p>
         <p class="text-[var(--black)]">“Built with Tailwind, GSAP & ❤️”</p>
       </div>
     </footer>
+
+    <!-- back to top button -->
+    <div id="progress" role="button" tabindex="0" aria-label="Back to top" title="Back To The Top Of The Page">
+      <span id="progress-value">
+        <i class="fa-solid fa-chevron-up"></i>
+      </span>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
